@@ -21,7 +21,7 @@ app.use('/', htmlRoutes);
 
 // access the public folder for use in our server
 // access css/html styling for the homepage
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
